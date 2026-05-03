@@ -33,19 +33,19 @@ public class Main{
 
             double subtotal = hab.calcularHospedaje();
 
-            // Descuento
+            //Descuento
             double descuento = 0;
             if (noches > 5) {
                 descuento = subtotal * 0.10;
             }
 
-            // IVA
+            //IVA
             double iva = (subtotal - descuento) * 0.15;
 
             double total = subtotal - descuento + iva;
 
-            // FACTURA
-            System.out.println("\n===== FACTURA =====");
+            //Factura
+            System.out.println("\n----FACTURA----");
             System.out.println("Huésped: " + nombre);
             hab.mostrarDetalle();
             System.out.println("Noches: " + noches);
